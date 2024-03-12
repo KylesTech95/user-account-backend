@@ -3,6 +3,7 @@ const nav_items = document.querySelectorAll('.list-item')
 const about_container = document.querySelector('#about-container')
 const products_container = document.querySelector('#products-container')
 const space2 = document.querySelector('.space2')
+console.log(window.location.pathname)
 
 const dropDown = () => {
     if(navigation.classList.contains('base')){
@@ -98,7 +99,7 @@ const contentHide2Index = () => {
 }
 
 // if the pathname includes "index", then execute event listener
-if(/index|account/g.test(window.location.pathname)){
+if(/\//g.test(window.location.pathname)){
     window.addEventListener('scroll',e=>{
         let top = space2.getBoundingClientRect().y
         // get scroll position for Y
@@ -119,6 +120,7 @@ if(/index|account/g.test(window.location.pathname)){
         }
     })
 }
+
 
 // figcaptions change color while hovering over figure image
 const figLabelGlow = () => {

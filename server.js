@@ -9,10 +9,10 @@ const express = require('express')
 const session = require('express-session')
 const cors = require('cors')
 const bodyParser = require('body-parser')
-
+const users = []
 // define app
 const app = express();
-
+app.set('view-engine','ejs')
 // define PORT
 const port = !process.env.PORT?3000:process.env.PORT
 // listen to server
@@ -21,6 +21,7 @@ app.listen(port,function(){
 })
 
 // middleware
+app.use('/public', express.static(__dirname + '/public'));
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
@@ -28,4 +29,4 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use('/public', express.static(`${process.cwd()}/public`));
 
 
-routes(app)
+routes(app,users)
