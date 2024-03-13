@@ -33,7 +33,9 @@ app.use(express.urlencoded({extended:true}))
 app.use(bodyParser.urlencoded({extended:true}))
 app.use('/public', express.static(`${process.cwd()}/public`));
 app.use(session({
-    secret:process.env.SESSION_KEY
+    secret:process.env.SESSION_KEY,
+    resave:false,
+    saveUninitialized:false
 }))
 
 routes(app,users)
