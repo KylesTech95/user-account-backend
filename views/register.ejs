@@ -70,7 +70,7 @@
             <div class="card card-front"></div>
     
             <div class="card card-info">
-                <form action="/card" method="POST" id="form0">
+                <form action="/insert-user" method="POST" id="form0">
                 <!--profile pic-->
                 <!--profile pic-->
                 <div id="profile-picture" class="picture img">
@@ -102,6 +102,12 @@
                         <label for="username" class="label">Username</label>
                         <input class="open" type="text" name="username" id="username" required placeholder="jDoe123">
                         <h3 class="close" id="username" class="username uname user-name"></h3>
+                    </div>
+                    <form action="/insert-user" method="POST" id="form0">
+                    <!--Password-->
+                    <div class="password-container">
+                        <label for="password" class="label">Password</label>
+                        <input class="open" type="password" name="password" id="password" required placeholder="P@ssW0rd321@">
                     </div>
                     <!--phone-->
                     <div class="phone-container">
