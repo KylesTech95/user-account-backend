@@ -21,7 +21,6 @@
 
 
 
-
     <!--navigation-->
     <div id="navigation-bar-container" class="base whatever">
         <!--navigation bar-->
@@ -60,7 +59,7 @@
             <a id="welcome-login-btn" class="welcome-login" href="#loginRef">Login</a>
         </div>
         <!--profile card-->
-    
+    <% if(showRegistration){ %>
         <div id="profile-container" class="appear-content">
     
             <!--card-back-->
@@ -129,6 +128,8 @@
     
           
         </div>
+  <%  } %>
+        
 
     </div>
     <hr class="hr"> 
@@ -144,7 +145,7 @@
             <a id="welcome-register-btn" class="welcome-register" href="#registerRef">Register</a>
         </div>
         <!--profile card-->
-    
+    <% if(showLogin){ %>
         <div id="profile-container2" class="appear-content">
     
             <!--card-back-->
@@ -196,6 +197,8 @@
     
           
         </div>
+   <% } %>
+        
 
     </div>
 

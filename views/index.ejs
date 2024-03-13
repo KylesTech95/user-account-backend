@@ -21,19 +21,19 @@
 
     <nav id="navigation-bar">
         <ul id="list-container">
-            <li class="list-item hidden"><a href="/user-account">Home</a></li>
+            <li class="list-item hidden"><a href="/">Home</a></li>
             <li class="list-item hidden"><a href="#about">About</a></li>
             <li class="list-item hidden"><a href="#products">Products</a></li>
             <li class="list-item hidden"><a href="#contact">Contact</a></li>
         </ul>
         <!-- Links to login & register -->
-        <a href="register.html#loginRef" class="login">
+        <a href="/register#loginRef" class="login">
             <span class="material-symbols-outlined login login-icon icon-login">
                 passkey
                 </span>
         </a>
         
-        <a href="register.html" class="register">
+        <a href="/register#registerRef" class="register">
             <span class="material-symbols-outlined edit note edit-note note-edit">
             edit_note
             </span>
@@ -59,7 +59,7 @@
         <h3 id="about-actual" class="about-message message-about h2-about about-h2">View our Products</h3>
         <div id="products-actual-container">
             <!--registration figure-->
-            <a href="/register" class="reg-link">
+            <a href="/register#registerRef" class="reg-link">
                 <figure class="reg-figure">
                     <img src="https://github.com/KylesTech95/user-account-backend/blob/main/media/registerpic.jpg?raw=true" alt="picture of a chalkboard that states 'Register'" class="reg-img">
                     <figcaption>Register</figcaption>
@@ -67,7 +67,7 @@
             </a>
             
                 <!--login figure-->
-            <a href="/register" method="GET" class="log-link">
+            <a href="/register#loginRef" method="GET" class="log-link">
                 <figure class="log-figure">
                     <img src="https://github.com/KylesTech95/user-account-backend/blob/main/media/notespic.jpg?raw=true" alt="picture of a clipboard with empty notes" class="log-img">
                     <figcaption>Login</figcaption>
